@@ -1,0 +1,17 @@
+name: test-workflow
+
+on: push
+
+jobs:
+    runs_on: 'ubuntu'
+    steps:
+    - name: welcome message
+      run: echo welcome to Githu actions
+
+    - name: list the files
+      run: ls -a
+
+
+
+
+
