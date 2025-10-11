@@ -3,15 +3,14 @@ name: test-workflow
 on: push
 
 jobs:
-    runs_on: 'ubuntu'
+  test-job:
+    runs-on: ubuntu-latest
     steps:
     - name: welcome message
-      run: echo welcome to Githu actions
+      run: echo "welcome to Github Actions"
 
     - name: list the files
-      run: ls -a
+      run: ls -la
 
-
-
-
-
+    - name: read the files
+      run: cat .github/workflows/test.yml
