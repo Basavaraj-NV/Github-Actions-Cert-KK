@@ -9,6 +9,8 @@ jobs:
     - name: welcome message
       run: echo "welcome to Github Actions"
 
+    - uses: actions/checkout@v3
+
     - name: list the files
       run: ls -la
 
