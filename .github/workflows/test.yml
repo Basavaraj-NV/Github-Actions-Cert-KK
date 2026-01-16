@@ -6,6 +6,7 @@ on:
 
 jobs:
   test-job:
+    timeout-minutes: 1
     concurrency:
       group: test-job
       cancel-in-progress: true
@@ -27,6 +28,7 @@ jobs:
     - name: read the files
 
       run: cat .github/workflows/test.yml
+
 
 
 
