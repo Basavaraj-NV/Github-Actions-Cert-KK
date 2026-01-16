@@ -6,6 +6,9 @@ on:
 
 jobs:
   test-job:
+    concurrency:
+      group: test-job
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
     - name: welcome message
@@ -24,5 +27,6 @@ jobs:
     - name: read the files
 
       run: cat .github/workflows/test.yml
+
 
 
