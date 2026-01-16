@@ -14,8 +14,12 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: list the files
-      run: ls -la
+      run: |
+        ls -a
+        sleep 600s
+       
 
     - name: read the files
 
       run: cat .github/workflows/test.yml
+
