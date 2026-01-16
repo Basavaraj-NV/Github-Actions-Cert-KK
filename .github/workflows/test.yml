@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: welcome message
-      run: echo "welcome to Github Actions"
+      run: |
+        echo "welcome to Github Actions"
+        echo "Hi Basava"
 
     - uses: actions/checkout@v3
 
@@ -22,4 +24,5 @@ jobs:
     - name: read the files
 
       run: cat .github/workflows/test.yml
+
 
